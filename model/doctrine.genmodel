@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.se.doctrine.metamodel/src"
+    modelPluginID="org.se.doctrine.metamodel" modelName="Doctrine" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="6.0" copyrightFields="false">
+  <foreignModel>doctrine.ecore</foreignModel>
+  <genPackages prefix="Doctrine" disposableProviderFactory="true" ecorePackage="doctrine.ecore#/">
+    <nestedGenPackages prefix="Package" basePackage="doctrine" disposableProviderFactory="true"
+        ecorePackage="doctrine.ecore#//Package">
+      <genClasses ecoreClass="doctrine.ecore#//Package/Package">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute doctrine.ecore#//Package/Package/custom_path"/>
+        <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference doctrine.ecore#//Package/Package/parent"/>
+      </genClasses>
+      <genClasses image="false" ecoreClass="doctrine.ecore#//Package/AbstractContainer">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference doctrine.ecore#//Package/AbstractContainer/children"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference doctrine.ecore#//Package/AbstractContainer/classes"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Class" basePackage="doctrine" disposableProviderFactory="true"
+        ecorePackage="doctrine.ecore#//Class">
+      <genClasses ecoreClass="doctrine.ecore#//Class/Class">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference doctrine.ecore#//Class/Class/behaviors"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference doctrine.ecore#//Class/Class/columns"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute doctrine.ecore#//Class/Class/tableName"/>
+        <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference doctrine.ecore#//Class/Class/package"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference doctrine.ecore#//Class/Class/options"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference doctrine.ecore#//Class/Class/listeners"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference doctrine.ecore#//Class/Class/inheritance"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference doctrine.ecore#//Class/Class/indexes"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference doctrine.ecore#//Class/Class/extendedBy"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference doctrine.ecore#//Class/Class/checks"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference doctrine.ecore#//Class/Class/relations"/>
+      </genClasses>
+      <nestedGenPackages prefix="Behaviors" basePackage="doctrine.Class" disposableProviderFactory="true"
+          ecorePackage="doctrine.ecore#//Class/Behaviors">
+        <genClasses ecoreClass="doctrine.ecore#//Class/Behaviors/Behaviors">
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference doctrine.ecore#//Class/Behaviors/Behaviors/behaviors"/>
+        </genClasses>
+        <genClasses ecoreClass="doctrine.ecore#//Class/Behaviors/Behavior">
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference doctrine.ecore#//Class/Behaviors/Behavior/options"/>
+        </genClasses>
+        <genClasses image="false" ecoreClass="doctrine.ecore#//Class/Behaviors/Option"/>
+        <genClasses image="false" ecoreClass="doctrine.ecore#//Class/Behaviors/LeafOption"/>
+        <genClasses ecoreClass="doctrine.ecore#//Class/Behaviors/IntermediateOption">
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference doctrine.ecore#//Class/Behaviors/IntermediateOption/children"/>
+        </genClasses>
+        <genClasses ecoreClass="doctrine.ecore#//Class/Behaviors/IntegerOption">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute doctrine.ecore#//Class/Behaviors/IntegerOption/value"/>
+        </genClasses>
+        <genClasses ecoreClass="doctrine.ecore#//Class/Behaviors/ArrayOption">
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference doctrine.ecore#//Class/Behaviors/ArrayOption/values"/>
+        </genClasses>
+        <genClasses ecoreClass="doctrine.ecore#//Class/Behaviors/ArrayValue">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute doctrine.ecore#//Class/Behaviors/ArrayValue/value"/>
+        </genClasses>
+        <genClasses ecoreClass="doctrine.ecore#//Class/Behaviors/StringOption">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute doctrine.ecore#//Class/Behaviors/StringOption/value"/>
+        </genClasses>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Columns" basePackage="doctrine.Class" disposableProviderFactory="true"
+          ecorePackage="doctrine.ecore#//Class/Columns">
+        <genClasses ecoreClass="doctrine.ecore#//Class/Columns/Columns">
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference doctrine.ecore#//Class/Columns/Columns/columns"/>
+        </genClasses>
+        <genClasses ecoreClass="doctrine.ecore#//Class/Columns/Column">
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference doctrine.ecore#//Class/Columns/Column/type"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute doctrine.ecore#//Class/Columns/Column/primary"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute doctrine.ecore#//Class/Columns/Column/unique"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute doctrine.ecore#//Class/Columns/Column/notNull"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute doctrine.ecore#//Class/Columns/Column/collation"/>
+        </genClasses>
+        <genClasses image="false" ecoreClass="doctrine.ecore#//Class/Columns/ColumnType"/>
+        <genClasses ecoreClass="doctrine.ecore#//Class/Columns/BooleanColumn">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute doctrine.ecore#//Class/Columns/BooleanColumn/default"/>
+        </genClasses>
+        <genClasses ecoreClass="doctrine.ecore#//Class/Columns/IntegerColumn">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute doctrine.ecore#//Class/Columns/IntegerColumn/default"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute doctrine.ecore#//Class/Columns/IntegerColumn/unsigned"/>
+        </genClasses>
+        <genClasses ecoreClass="doctrine.ecore#//Class/Columns/FloatColumn">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute doctrine.ecore#//Class/Columns/FloatColumn/default"/>
+        </genClasses>
+        <genClasses ecoreClass="doctrine.ecore#//Class/Columns/ArrayColumn"/>
+        <genClasses ecoreClass="doctrine.ecore#//Class/Columns/DecimalColumn">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute doctrine.ecore#//Class/Columns/DecimalColumn/default"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute doctrine.ecore#//Class/Columns/DecimalColumn/scale"/>
+        </genClasses>
+        <genClasses ecoreClass="doctrine.ecore#//Class/Columns/StringColumn">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute doctrine.ecore#//Class/Columns/StringColumn/default"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute doctrine.ecore#//Class/Columns/StringColumn/fixed"/>
+        </genClasses>
+        <genClasses image="false" ecoreClass="doctrine.ecore#//Class/Columns/SerializedColumn"/>
+        <genClasses ecoreClass="doctrine.ecore#//Class/Columns/BlobColumn"/>
+        <genClasses ecoreClass="doctrine.ecore#//Class/Columns/ClobColumn"/>
+        <genClasses ecoreClass="doctrine.ecore#//Class/Columns/TimestampColumn"/>
+        <genClasses ecoreClass="doctrine.ecore#//Class/Columns/TimeColumn"/>
+        <genClasses ecoreClass="doctrine.ecore#//Class/Columns/DateColumn"/>
+        <genClasses ecoreClass="doctrine.ecore#//Class/Columns/EnumColumn">
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference doctrine.ecore#//Class/Columns/EnumColumn/values"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference doctrine.ecore#//Class/Columns/EnumColumn/default"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute doctrine.ecore#//Class/Columns/EnumColumn/length"/>
+        </genClasses>
+        <genClasses ecoreClass="doctrine.ecore#//Class/Columns/EnumValue">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute doctrine.ecore#//Class/Columns/EnumValue/value"/>
+        </genClasses>
+        <genClasses ecoreClass="doctrine.ecore#//Class/Columns/GzipColumn"/>
+        <genClasses ecoreClass="doctrine.ecore#//Class/Columns/ObjectColumn"/>
+        <genClasses image="false" ecoreClass="doctrine.ecore#//Class/Columns/LengthColumn">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute doctrine.ecore#//Class/Columns/LengthColumn/length"/>
+        </genClasses>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Relations" basePackage="doctrine.Class" disposableProviderFactory="true"
+          ecorePackage="doctrine.ecore#//Class/Relations">
+        <genEnums typeSafeEnumCompatible="false" ecoreEnum="doctrine.ecore#//Class/Relations/DATABASE_LEVEL_CASCADING">
+          <genEnumLiterals ecoreEnumLiteral="doctrine.ecore#//Class/Relations/DATABASE_LEVEL_CASCADING/NONE"/>
+          <genEnumLiterals ecoreEnumLiteral="doctrine.ecore#//Class/Relations/DATABASE_LEVEL_CASCADING/CASCADE"/>
+          <genEnumLiterals ecoreEnumLiteral="doctrine.ecore#//Class/Relations/DATABASE_LEVEL_CASCADING/SET_NULL"/>
+          <genEnumLiterals ecoreEnumLiteral="doctrine.ecore#//Class/Relations/DATABASE_LEVEL_CASCADING/NO_ACTION"/>
+          <genEnumLiterals ecoreEnumLiteral="doctrine.ecore#//Class/Relations/DATABASE_LEVEL_CASCADING/RESTRICT"/>
+          <genEnumLiterals ecoreEnumLiteral="doctrine.ecore#//Class/Relations/DATABASE_LEVEL_CASCADING/SET_DEFAULT"/>
+        </genEnums>
+        <genEnums typeSafeEnumCompatible="false" ecoreEnum="doctrine.ecore#//Class/Relations/APPLICATION_LEVEL_CASCADING">
+          <genEnumLiterals ecoreEnumLiteral="doctrine.ecore#//Class/Relations/APPLICATION_LEVEL_CASCADING/NONE"/>
+          <genEnumLiterals ecoreEnumLiteral="doctrine.ecore#//Class/Relations/APPLICATION_LEVEL_CASCADING/DELETE"/>
+        </genEnums>
+        <genClasses ecoreClass="doctrine.ecore#//Class/Relations/Relations">
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference doctrine.ecore#//Class/Relations/Relations/relations"/>
+        </genClasses>
+        <genClasses ecoreClass="doctrine.ecore#//Class/Relations/Relation">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference doctrine.ecore#//Class/Relations/Relation/local"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference doctrine.ecore#//Class/Relations/Relation/foreign"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference doctrine.ecore#//Class/Relations/Relation/class"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute doctrine.ecore#//Class/Relations/Relation/foreignAlias"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute doctrine.ecore#//Class/Relations/Relation/owningSide"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference doctrine.ecore#//Class/Relations/Relation/type"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute doctrine.ecore#//Class/Relations/Relation/onDelete"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute doctrine.ecore#//Class/Relations/Relation/onUpdate"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute doctrine.ecore#//Class/Relations/Relation/delete"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute doctrine.ecore#//Class/Relations/Relation/foreignKeyName"/>
+        </genClasses>
+        <genClasses ecoreClass="doctrine.ecore#//Class/Relations/OneToManyRelationType"/>
+        <genClasses ecoreClass="doctrine.ecore#//Class/Relations/OneToOneRelationType"/>
+        <genClasses ecoreClass="doctrine.ecore#//Class/Relations/ManyToManyRelationType">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference doctrine.ecore#//Class/Relations/ManyToManyRelationType/refClass"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute doctrine.ecore#//Class/Relations/ManyToManyRelationType/equals"/>
+        </genClasses>
+        <genClasses image="false" ecoreClass="doctrine.ecore#//Class/Relations/RelationType"/>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Options" basePackage="doctrine.Class" disposableProviderFactory="true"
+          ecorePackage="doctrine.ecore#//Class/Options">
+        <genClasses ecoreClass="doctrine.ecore#//Class/Options/Options">
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference doctrine.ecore#//Class/Options/Options/options"/>
+        </genClasses>
+        <genClasses ecoreClass="doctrine.ecore#//Class/Options/Option">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute doctrine.ecore#//Class/Options/Option/name"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute doctrine.ecore#//Class/Options/Option/value"/>
+        </genClasses>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Listeners" basePackage="doctrine.Class" disposableProviderFactory="true"
+          ecorePackage="doctrine.ecore#//Class/Listeners">
+        <genClasses ecoreClass="doctrine.ecore#//Class/Listeners/Listeners">
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference doctrine.ecore#//Class/Listeners/Listeners/listeners"/>
+        </genClasses>
+        <genClasses ecoreClass="doctrine.ecore#//Class/Listeners/Listener"/>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Indexes" basePackage="doctrine.Class" disposableProviderFactory="true"
+          ecorePackage="doctrine.ecore#//Class/Indexes">
+        <genEnums typeSafeEnumCompatible="false" ecoreEnum="doctrine.ecore#//Class/Indexes/INDEX_SORTING">
+          <genEnumLiterals ecoreEnumLiteral="doctrine.ecore#//Class/Indexes/INDEX_SORTING/ASC"/>
+          <genEnumLiterals ecoreEnumLiteral="doctrine.ecore#//Class/Indexes/INDEX_SORTING/DESC"/>
+        </genEnums>
+        <genEnums typeSafeEnumCompatible="false" ecoreEnum="doctrine.ecore#//Class/Indexes/INDEX_TYPE">
+          <genEnumLiterals ecoreEnumLiteral="doctrine.ecore#//Class/Indexes/INDEX_TYPE/FULLTEXT"/>
+          <genEnumLiterals ecoreEnumLiteral="doctrine.ecore#//Class/Indexes/INDEX_TYPE/UNIQUE"/>
+          <genEnumLiterals ecoreEnumLiteral="doctrine.ecore#//Class/Indexes/INDEX_TYPE/GIST"/>
+          <genEnumLiterals ecoreEnumLiteral="doctrine.ecore#//Class/Indexes/INDEX_TYPE/GIN"/>
+        </genEnums>
+        <genClasses ecoreClass="doctrine.ecore#//Class/Indexes/Indexes">
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference doctrine.ecore#//Class/Indexes/Indexes/indexes"/>
+        </genClasses>
+        <genClasses ecoreClass="doctrine.ecore#//Class/Indexes/Index">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference doctrine.ecore#//Class/Indexes/Index/fields"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute doctrine.ecore#//Class/Indexes/Index/sorting"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute doctrine.ecore#//Class/Indexes/Index/length"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute doctrine.ecore#//Class/Indexes/Index/primary"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute doctrine.ecore#//Class/Indexes/Index/type"/>
+        </genClasses>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Inheritance" basePackage="doctrine.Class" disposableProviderFactory="true"
+          ecorePackage="doctrine.ecore#//Class/Inheritance">
+        <genClasses ecoreClass="doctrine.ecore#//Class/Inheritance/Inheritance">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference doctrine.ecore#//Class/Inheritance/Inheritance/class"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference doctrine.ecore#//Class/Inheritance/Inheritance/type"/>
+        </genClasses>
+        <genClasses image="false" ecoreClass="doctrine.ecore#//Class/Inheritance/Type"/>
+        <genClasses ecoreClass="doctrine.ecore#//Class/Inheritance/SimpleInheritance"/>
+        <genClasses ecoreClass="doctrine.ecore#//Class/Inheritance/ConcreteInheritance"/>
+        <genClasses ecoreClass="doctrine.ecore#//Class/Inheritance/ColumnAggregationInheritance">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute doctrine.ecore#//Class/Inheritance/ColumnAggregationInheritance/keyField"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute doctrine.ecore#//Class/Inheritance/ColumnAggregationInheritance/keyValue"/>
+        </genClasses>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Checks" basePackage="doctrine.Class" disposableProviderFactory="true"
+          ecorePackage="doctrine.ecore#//Class/Checks">
+        <genClasses ecoreClass="doctrine.ecore#//Class/Checks/Checks">
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference doctrine.ecore#//Class/Checks/Checks/checks"/>
+        </genClasses>
+        <genClasses ecoreClass="doctrine.ecore#//Class/Checks/Check">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute doctrine.ecore#//Class/Checks/Check/condition"/>
+        </genClasses>
+      </nestedGenPackages>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Connection" basePackage="doctrine" disposableProviderFactory="true"
+        ecorePackage="doctrine.ecore#//Connection">
+      <genClasses image="false" ecoreClass="doctrine.ecore#//Connection/ConnectableElement">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference doctrine.ecore#//Connection/ConnectableElement/connnection"/>
+      </genClasses>
+      <genClasses ecoreClass="doctrine.ecore#//Connection/Connection">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute doctrine.ecore#//Connection/Connection/name"/>
+      </genClasses>
+      <genClasses ecoreClass="doctrine.ecore#//Connection/Connections">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference doctrine.ecore#//Connection/Connections/connections"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Common" basePackage="doctrine" disposableProviderFactory="true"
+        ecorePackage="doctrine.ecore#//Common">
+      <genClasses image="false" ecoreClass="doctrine.ecore#//Common/NamedElement">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute doctrine.ecore#//Common/NamedElement/name"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Scheme" basePackage="doctrine" disposableProviderFactory="true"
+        ecorePackage="doctrine.ecore#//Scheme">
+      <genClasses ecoreClass="doctrine.ecore#//Scheme/Scheme">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference doctrine.ecore#//Scheme/Scheme/globals"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference doctrine.ecore#//Scheme/Scheme/connections"/>
+      </genClasses>
+      <genClasses ecoreClass="doctrine.ecore#//Scheme/Globals">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference doctrine.ecore#//Scheme/Globals/connection"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference doctrine.ecore#//Scheme/Globals/behaviors"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference doctrine.ecore#//Scheme/Globals/package"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference doctrine.ecore#//Scheme/Globals/options"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute doctrine.ecore#//Scheme/Globals/detect_relations"/>
+      </genClasses>
+      <genClasses ecoreClass="doctrine.ecore#//Scheme/Option">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute doctrine.ecore#//Scheme/Option/name"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute doctrine.ecore#//Scheme/Option/value"/>
+      </genClasses>
+    </nestedGenPackages>
+  </genPackages>
+</genmodel:GenModel>

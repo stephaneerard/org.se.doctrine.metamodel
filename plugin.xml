@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://org.se/doctrine/Package"
+            class="doctrine.Package.PackagePackage"
+            genModel="model/doctrine.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://org.se/doctrine/Class"
+            class="doctrine.Class.ClassPackage"
+            genModel="model/doctrine.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://org.se/doctrine/Class/Behaviors"
+            class="doctrine.Class.Behaviors.BehaviorsPackage"
+            genModel="model/doctrine.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://org.se/doctrine/Class/Columns"
+            class="doctrine.Class.Columns.ColumnsPackage"
+            genModel="model/doctrine.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://org.se/doctrine/Class/Relations"
+            class="doctrine.Class.Relations.RelationsPackage"
+            genModel="model/doctrine.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://org.se/doctrine/Class/Options"
+            class="doctrine.Class.Options.OptionsPackage"
+            genModel="model/doctrine.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://org.se/doctrine/Class/Listeners"
+            class="doctrine.Class.Listeners.ListenersPackage"
+            genModel="model/doctrine.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://org.se/doctrine/Class/Indexes"
+            class="doctrine.Class.Indexes.IndexesPackage"
+            genModel="model/doctrine.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://org.se/doctrine/Class/Inheritance"
+            class="doctrine.Class.Inheritance.InheritancePackage"
+            genModel="model/doctrine.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://org.se/doctrine/Class/Checks"
+            class="doctrine.Class.Checks.ChecksPackage"
+            genModel="model/doctrine.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://org.se/doctrine/Connection"
+            class="doctrine.Connection.ConnectionPackage"
+            genModel="model/doctrine.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://org.se/doctrine/Common"
+            class="doctrine.Common.CommonPackage"
+            genModel="model/doctrine.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://org.se/doctrine/Scheme"
+            class="doctrine.Scheme.SchemePackage"
+            genModel="model/doctrine.genmodel"/>
+   </extension>
+
+</plugin>
